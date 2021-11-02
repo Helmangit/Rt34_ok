@@ -18,7 +18,10 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
- *
+ * Clase Motorbike.java
+ * Permite crear la tabla Motorbike, crear los atributos, crear las relaciones de
+ * esta tabla con las tablas categorias, message y reservations
+ * y los metodos para recuperar los valores de los atributos y asignar valores
  * @author Helman
  */
 @Entity

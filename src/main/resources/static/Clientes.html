@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Interfaz Grafica Reto5 G34</title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<link rel="stylesheet" href="misestilos.css">
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="Funciones_Reto5.js"></script>  
+    <title>Reto3</title>
+	<style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+	</style>
+
+</head>
+<body>
+<header id="cabeceralogo">
+<div>
+<h1>CLIENTES</h1>
+</div>
+</header>
+<nav id="menuprincipal">
+<div>
+<ul>
+<li><a href="index1.html">Inicio</a></li>
+<li><a href="Categorias.html">Categorias</a></li>
+<li><a href="Motos.html">Motos</a></li>
+<li><a href="Mensajes.html">Mensajes</a></li>
+<li><a href="Reservas.html">Reservas</a></li>
+<li><a href="Reportes.html">Reportes</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<div>
+<section id="articulosprincipales">
+    <article>
+        <h1>Clientes</h1>
+        <time datetime="2016-12-23" pubdate>
+        <div class="numerodia">23</div>
+        <div class="nombredia">Viernes</div>
+        </time>
+        <p>Permite consultar, adicionar, modificar y eliminar los clientes</p>
+        </article>
+        
+		<input type="text" id="clidClient" placeholder="idClient">
+		<input type="text" id="clemail" placeholder="email">
+        <input type="text" id="clpassword" placeholder="password">
+        <input type="text" id="clname" placeholder="name">
+        <input type="number" id="clage" placeholder="age">  
+	
+
+	<button onclick="clregistro()">Crear</button>
+
+	<button onclick="clobtenerItems()">Ver</button>
+	
+	<button onclick="clactualizar()">Editar</button>
+
+	<div>
+
+		<table>
+			<div id="clresultado"></div>
+
+		</table>
+		
+	</div>
+	
+
+        </footer>
+        </body>
+        </html>
