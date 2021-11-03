@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Interfaz Grafica Reto5 G34</title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<link rel="stylesheet" href="misestilos.css">
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="Funciones_Reto5.js"></script>  
+    <title>Reto5</title>
+	<style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+	</style>
+
+</head>
+<body>
+<header id="cabeceralogo">
+<div>
+<h1>MOTOS</h1>
+</div>
+</header>
+<nav id="menuprincipal">
+<div>
+<ul>
+<li><a href="index1.html">Inicio</a></li>
+<li><a href="Categorias.html">Categorias</a></li>
+<li><a href="Clientes.html">Clientes</a></li>
+<li><a href="Mensajes.html">Mensajes</a></li>
+<li><a href="Reservas.html">Reservas</a></li>
+<li><a href="Reportes.html">Reportes</a></li>
+</ul>
+</div>
+</nav>
+
+<main>
+<div>
+<section id="articulosprincipales">
+    <article>
+        <h1>Motos</h1>
+        <time datetime="2016-12-23" pubdate>
+        <div class="numerodia">23</div>
+        <div class="nombredia">Viernes</div>
+        </time>
+        <p>Permite consultar, adicionar y eliminar las motos</p>
+        </article>
+        
+	
+		<input type="number" id="mtid" placeholder="id">
+        <input type="text" id="mtname" placeholder="name">
+        <input type="text" id="mtbrand" placeholder="brand">
+        <input type="number" id="mtyear" placeholder="year">
+        <input type="text" id="mtdescription" placeholder="description">    
+		<input type="number" id="mtcategory" placeholder="category">    
+
+	<button onclick="mtregistro()">Crear</button>
+
+	<button onclick="mtobtenerItems()">Ver</button>
+	
+	<button onclick="mtactualizar()">Editar</button>
+
+	<div>
+
+		<table>
+			<div id="mtresultado"></div>
+
+		</table>
+		
+	</div>
+	
+
+        </footer>
+        </body>
+        </html>

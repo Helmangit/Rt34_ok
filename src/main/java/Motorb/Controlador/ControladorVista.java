@@ -6,14 +6,16 @@ package Motorb.Controlador;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author Helman
  */
-@RequestMapping("/api/index1.html")
+@RestController
+@RequestMapping("/api/index.html")
 public class ControladorVista {
-    @GetMapping ("/index1.html")
+    @GetMapping ("/index.html")
     public void vista(){
         
     }
