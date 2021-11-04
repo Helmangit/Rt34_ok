@@ -13,7 +13,7 @@ function ctregistro(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
         
-        url:"http://129.151.110.62:8080/api/Category/save",
+        url:"http://localhost:8080/api/Category/save",
        
         
         success:function(response) {
@@ -40,7 +40,7 @@ function ctregistro(){
 function ctobtenerItems(){
 
      $.ajax({
-        url:"http://129.151.110.62:8080/api/Category/all",
+        url:"http://localhost:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -82,7 +82,7 @@ var dataToSend=JSON.stringify(elemento);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Category/"+idElemento,
+      url:"http://localhost:8080/api/Category/"+idElemento,
       type:'DELETE',
       contentType:'application/json',
       success:function(response) {
@@ -108,7 +108,7 @@ function ctobtenerItemEspecifico(idItem){
       dataType: 'JSON',
       //data: {id:idItem},
 	  //data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Category/"+idItem,
+      url:"http://localhost:8080/api/Category/"+idItem,
       type:'GET',
 	  // contentType:'application/json',
       success:function(response) {
@@ -153,7 +153,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://129.151.110.62:8080/api/Category/update",
+      url:"http://localhost:8080/api/Category/update",
       type:'PUT',
       
       success:function(response) {
@@ -188,7 +188,7 @@ function clregistro(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
         
-        url:"http://129.151.110.62:8080/api/Client/save",
+        url:"http://localhost:8080/api/Client/save",
        
         
         success:function(response) {
@@ -215,7 +215,7 @@ function clregistro(){
 function clobtenerItems(){
 
      $.ajax({
-        url:"http://129.151.110.62:8080/api/Client/all",
+        url:"http://localhost:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -261,7 +261,7 @@ var dataToSend=JSON.stringify(elemento);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Client/"+idElemento,
+      url:"http://localhost:8080/api/Client/"+idElemento,
       type:'DELETE',
       contentType:'application/json',
       success:function(response) {
@@ -287,7 +287,7 @@ function clobtenerItemEspecifico(idItem){
       dataType: 'JSON',
       //data: {id:idItem},
 	  //data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Client/"+idItem,
+      url:"http://localhost:8080/api/Client/"+idItem,
       type:'GET',
 	  // contentType:'application/json',
       success:function(response) {
@@ -337,7 +337,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://129.151.110.62:8080/api/Client/update",
+      url:"http://localhost:8080/api/Client/update",
       type:'PUT',
       
       success:function(response) {
@@ -376,7 +376,7 @@ function mtregistro(){
         dataType: 'JSON',
         data: JSON.stringify(var4),
         
-        url:"http://129.151.110.62:8080/api/Motorbike/save",
+        url:"http://localhost:8080/api/Motorbike/save",
        
         
         success:function(response) {
@@ -402,7 +402,7 @@ function mtregistro(){
 function mtobtenerItems(){
 
      $.ajax({
-        url:"http://129.151.110.62:8080/api/Motorbike/all",
+        url:"http://localhost:8080/api/Motorbike/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -448,7 +448,7 @@ var dataToSend=JSON.stringify(elemento);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Motorbike/"+idElemento,
+      url:"http://localhost:8080/api/Motorbike/"+idElemento,
       type:'DELETE',
       contentType:'application/json',
       success:function(response) {
@@ -475,7 +475,7 @@ function mtobtenerItemEspecifico(idItem){
       dataType: 'JSON',
       //data: {id:idItem},
 	  //data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Motorbike/"+idItem,
+      url:"http://localhost:8080/api/Motorbike/"+idItem,
       type:'GET',
 	  // contentType:'application/json',
       success:function(response) {
@@ -529,7 +529,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://129.151.110.62:8080/api/Motorbike/update",
+      url:"http://localhost:8080/api/Motorbike/update",
       type:'PUT',
       
       success:function(response) {
@@ -574,7 +574,7 @@ function msregistro(){
         dataType: 'JSON',
         data: JSON.stringify(var4),
         
-        url:"http://129.151.110.62:8080/api/Message/save",
+        url:"http://localhost:8080/api/Message/save",
        
         
         success:function(response) {
@@ -600,7 +600,7 @@ function msregistro(){
 function msobtenerItems(){
 
      $.ajax({
-        url:"http://129.151.110.62:8080/api/Message/all",
+        url:"http://localhost:8080/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -645,7 +645,7 @@ var dataToSend=JSON.stringify(elemento);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Message/"+idElemento,
+      url:"http://localhost:8080/api/Message/"+idElemento,
       type:'DELETE',
       contentType:'application/json',
       success:function(response) {
@@ -672,7 +672,7 @@ function msobtenerItemEspecifico(idItem){
       dataType: 'JSON',
       //data: {id:idItem},
 	  //data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Message/"+idItem,
+      url:"http://localhost:8080/api/Message/"+idItem,
       type:'GET',
 	  // contentType:'application/json',
       success:function(response) {
@@ -722,7 +722,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://129.151.110.62:8080/api/Message/update",
+      url:"http://localhost:8080/api/Message/update",
       type:'PUT',
       
       success:function(response) {
@@ -774,7 +774,7 @@ console.log(fechaCierre);
         dataType: 'JSON',
         data: JSON.stringify(var4),
         
-        url:"http://129.151.110.62:8080/api/Reservation/save",
+        url:"http://localhost:8080/api/Reservation/save",
        
         
         success:function(response) {
@@ -800,7 +800,7 @@ console.log(fechaCierre);
 function rsobtenerItems(){
 
      $.ajax({
-        url:"http://129.151.110.62:8080/api/Reservation/all",
+        url:"http://localhost:8080/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -849,7 +849,7 @@ var dataToSend=JSON.stringify(elemento);
 $.ajax({
       dataType:'json',
       data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Reservation/"+idElemento,
+      url:"http://localhost:8080/api/Reservation/"+idElemento,
       type:'DELETE',
       contentType:'application/json',
       success:function(response) {
@@ -879,7 +879,7 @@ function rsobtenerItemEspecifico(idItem){
       dataType: 'JSON',
       //data: {id:idItem},
 	  //data:dataToSend,
-      url:"http://129.151.110.62:8080/api/Reservation/"+idItem,
+      url:"http://localhost:8080/api/Reservation/"+idItem,
       type:'GET',
 	  // contentType:'application/json',
       success:function(response) {
@@ -944,7 +944,7 @@ $.ajax({
       dataType: 'json',
       data:dataToSend,
       contentType:'application/json',
-      url:"http://129.151.110.62:8080/api/Reservation/update",
+      url:"http://localhost:8080/api/Reservation/update",
       type:'PUT',
       
       success:function(response) {
@@ -971,7 +971,7 @@ $.ajax({
 function traerReporteStatus(){
     console.log("test");
     $.ajax({
-        url:"http://129.151.110.62:8080/api/Reservation/report-status",
+        url:"http://localhost:8080/api/Reservation/report-status",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -1002,7 +1002,7 @@ console.log(fechaInicio);
 console.log(fechaCierre);
 
     $.ajax({
-        url:"http://129.151.110.62:8080/api/Reservation/report-dates/"+fechaInicio+"/"+fechaCierre,
+        url:"http://localhost:8080/api/Reservation/report-dates/"+fechaInicio+"/"+fechaCierre,
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -1031,7 +1031,7 @@ function pintarRespuestaDate(respuesta){
 
 function traerReporteClientes(){
     $.ajax({
-        url:"http://129.151.110.62:8080/api/Reservation/report-clients",
+        url:"http://localhost:8080/api/Reservation/report-clients",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
